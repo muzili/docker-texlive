@@ -11,6 +11,7 @@ RUN apt-get update && \
     texlive-context texlive-fonts-recommended \
     texlive-latex-recommended texlive-latex-extra \
     fonts-wqy-microhei fonts-wqy-zenhei && \
+    gem install mkbok && \
     apt-get autoclean && apt-get clean
 
 VOLUME ["/source"]
